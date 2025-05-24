@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*
+    *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color:#121212;
+            color: #f1f1f1;
+        } 
+        img{
+            height: 230px;
+        }
+        .container-fluid, .sub{
+            background-color:rgb(188, 175, 175);
+            padding-left: 340px;
+        }
+        .text1{
+            margin: 10px;
+        }
+        #mensagem, #mensagem2, #mensagem3, #mensagem4, #mensagem5{
+            margin: 10px;
+            font-size: 18px;
+        }
+        .h2{
+        padding: 10px 0 0 81px;
+        }
+        .nav-list{
+            background-color:rgb(188, 175, 175);
+            padding: 0; 
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            height: 50px;
+        }
+        .button1, .button2, .button3, .button4, .button5{
+        font-size: 15px;
+        padding: 2px;
+        margin: 5px; 
+        border: 5px solid rgb(195, 183, 183)
+        }
+
+        .INICIO{
+        margin: 46px;
+        color:rgb(57, 26, 26);
+        text-decoration:none;
+        display: inline-block;
+        padding: 5px 10px;
+        }
+        .INICIO:hover, .SOBRE:hover, .CONTATO:hover {
+        font-size: 20px;
+        color: aqua;
+        }
+        .SOBRE{
+        color:rgb(57, 26, 26);
+        text-decoration:none;
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 56px;
+        }
+
+        .CONTATO{
+        color:rgb(57, 26, 26);
+        text-decoration:none;
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 37px;
+        }
+        .INICIO,  .SOBRE, .CONTATO{
+        font-size: 20px;
+        padding: 0;
+        }
+        #texto1{
+        height: 90px;
+        }
+        .descricao{
+        font-size: 19px;
+        }
+        .ini2{
+            background-color: rgb(148, 126, 126);
+            color: rgb(230, 224, 224);
+            border: 5px solid;
+            width: 350px;
+            height: 180px;
+            padding-left: 20px;
+            margin-left: 230px;
+        } */
+    </style> 
+</head>
+<body>
+    <div class= "container-fluid">
+        <header class="sub" > <!-- 1 tag usada -->
+            <h1>Bem vindo ao Rio de Janeiro!</h1>
+            <h2 class="h2">O que fazer quando visitar? 🤔 </h2>
+        </header>
+    </div>
+<div class="container" > 
+    <aside> <!--2 tags usadas-->
+        <nav role="navigation"><!--<5 tags usadas -->
+            <ul class="nav-list" >
+                <li><a href="#" onclick="mostrarSecao('inicio')" class="INICIO" >Início</a></li> 
+                <li><a href="#" onclick="mostrarSecao('sobre')" class="SOBRE"  >Sobre</a></li>
+                <li><a href="#" onclick="mostrarSecao('contato')" class="CONTATO"  >Contato</a></li>  
+            </ul>
+    </nav>
+</aside> 
+<section id="ini" class="secao" style="display: block;"><br>
+    <h2>
+    Você está procurando lugares para conhecer no Rio de Janeiro e não sabe onde pode visitar? <br></h2>
+    <h3 class="ini2" > Então venha com a gente e descubra alguns dos belos lugares para conhecer essa maravilhosa cidade </h3>
+</section>       
+<!--3 tags usadas-->
+    <main> <!-- conteudo principal da página  4 tags usadas-->
+        <section id="inicio" class="secao" style="display: none;" >
+            <h2 class="text1">Alguns lugares para conhecer: </h2><br>
+                    <div class="row">
+                        <div class="col-md-6" >
+                            <button class="button1" onclick="document.getElementById ('mensagem').innerText= 'Cristo Redentor é uma estátua que retrata Jesus Cristo localizada no topo do morro do Corcovado, dentro do Parque Nacional da Tijuca, sendo uma experiência única aos visitantes!'"> Uma das 7 maravilhas do mundo</button>
+                            <figure> 
+                                 <!--6 tag usada -->
+                                <img class="img-fluid" src="APS/cristo.jpeg" alt="Jesus"/>
+                                <figcaption>Cristo Redentor</figcaption> <!--7 tag usada -->
+                            </figure>
+                            <p id="mensagem" class="resultado"> Cristo Redentor</p>
+                        </div>
+                            <div class="col-md-6">
+                                <button class="button2" onclick="document.getElementById('mensagem2').innerText='O Pão de Açúcar, no Rio de Janeiro, é um destino turístico imperdível, conhecido pelas suas vistas panorâmicas da cidade e da Baía de Guanabara, podendo usar o bondinho ou seguir por uma trilha.'"> Uma bela vista</button>
+                                <figure>
+                                    <img class="img-fluid" src="APS/pao.jpeg" alt="Acucar">
+                                    <figcaption>Pão de Açúcar</figcaption>
+                                </figure>
+                                <p id="mensagem2" class="resultado2"  > Pão de Açúcar</p>
+                            </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4"><br>
+                                <button class="button3" onclick="document.getElementById('mensagem3').innerText='As praias do Rio de Janeiro são bastante famosas quando pensamos em visitar o Rio e dentre elas, há algumas mais conhecidas, como: Praia de Copacabana, do Arpoador, praia do Recreio, a Região dos Lagos, de Ipanema e diversas outras.'" > Praia 
+                                </button>
+                                <figure>
+                                    <img class="img-fluid" src="APS/praia.jpeg" alt="Praia do Arpoador no Rio de Janeiro">
+                                    <figcaption>Praia do Arpoador no Rio de Janeiro</figcaption>
+                                </figure>
+                                <p id="mensagem3" class="resultado3">Praia do Arpoador no Rio de Janeiro</p><br>
+                                </div>
+                            <div class="col-md-4">
+                                <button class="button4" onclick="document.getElementById('mensagem4').innerText='Museu do amanhã no Rio de Janeiro, com uma grande estrutura, contando com diferentes tipos de exposições para apreciar e se maravilhar!!'">Museu
+                                </button>
+                                <figure>
+                                    <img class="img-fluid" src="APS/museu.jpeg" alt="Museu do amanha">
+                                    <figcaption> Museu do amanha do Rio de Janeiro, vista a noite </figcaption>
+                                </figure>
+                                <p id="mensagem4" class="resultado4"> Museu</p>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="button5" onclick="document.getElementById('mensagem5').innerText='A Biblioteca Nacional é um ótimo passeio para quem ama e se interessa pela história do Brasil!'">Biblioteca</button>
+                                <figure>
+                                    <img class="img-fluid" src="APS/biblioteca.jpeg" alt="Bibioteca Nacional">
+                                    <figcaption>Biblioteca Nacional no Rio de Janeiro</figcaption>
+                                </figure>
+                            <p id="mensagem5" class="resultado5" >Biblioteca Nacional </p>
+                           
+                            </div>
+                           
+                    </div>
+                    
+                            
+        </section>
+        <section id="sobre" class="secao" style="display: none;" >
+            <h2>
+                Sobre Nós:
+            </h2>
+            <br>
+            <p class="descricao" >
+                Somos uma empresa, um blog que busca mostrar de forma direta lugares que são interessantes para se visitar ao redor do mundo, seja no Brasil ou fora.<br>Ao longo dos anos, adquirimos parcerias com a Google, VirtualBox e o Facebook.<br>Esperamos que você goste e aproveite os diferentes temas presentes!!
+            </p>
+        </section>
+        <section id="contato" class="secao" style="display: none;" >
+            <h3>
+                Tem alguma dúvida ou feedback para dar? Contate-nos
+            </h3>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Digite seu Email: " > <br>
+           <br> 
+           <label for="nome">Nome: </label>
+           <input type="text" id="nome"  aria-label="Campo para nome: "><br>
+           <br><label for="texto1" >Feedback: </label>
+            <input type="text" id="texto1">
+        </section>
+    </main>
+</div> 
+<script src="script.js" ></script>
+<script> //tag para escrever Javascript dentro do html
+document.getElementById("mensagem").innerText=" " ; //Codigos vanila em JS
+document.getElementById("mensagem2").innerText=" ";
+document.getElementById("mensagem3").innerText=" " ;
+document.getElementById("mensagem4").innerText=" ";
+document.getElementById("mensagem5").innerText=" ";
+
+function mostrarSecao(id) {
+// Seleciona todas as seções
+    const secoes = document.querySelectorAll(".secao");
+
+// Oculta todas as seções
+    secoes.forEach(secao => secao.style.display = "none");
+
+// Exibe apenas a seção clicada 
+    const secaoSelecionada = document.getElementById(id);
+    secaoSelecionada.style.display = "block"; 
+} 
+</script>
+</body>
+</html>
